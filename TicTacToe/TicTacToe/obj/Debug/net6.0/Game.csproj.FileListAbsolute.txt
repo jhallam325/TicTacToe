@@ -1,0 +1,14 @@
+C:\Users\4400117676\Source\Repos\TicTacToeRepo\TicTacToe\TicTacToe\obj\Debug\net6.0\Game.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\4400117676\Source\Repos\TicTacToeRepo\TicTacToe\TicTacToe\obj\Debug\net6.0\Game.AssemblyInfoInputs.cache
+C:\Users\4400117676\Source\Repos\TicTacToeRepo\TicTacToe\TicTacToe\obj\Debug\net6.0\Game.AssemblyInfo.cs
+C:\Users\4400117676\Source\Repos\TicTacToeRepo\TicTacToe\TicTacToe\obj\Debug\net6.0\Game.csproj.CoreCompileInputs.cache
+C:\Users\4400117676\Source\Repos\TicTacToeRepo\TicTacToe\TicTacToe\bin\Debug\net6.0\Game.exe
+C:\Users\4400117676\Source\Repos\TicTacToeRepo\TicTacToe\TicTacToe\bin\Debug\net6.0\Game.deps.json
+C:\Users\4400117676\Source\Repos\TicTacToeRepo\TicTacToe\TicTacToe\bin\Debug\net6.0\Game.runtimeconfig.json
+C:\Users\4400117676\Source\Repos\TicTacToeRepo\TicTacToe\TicTacToe\bin\Debug\net6.0\Game.dll
+C:\Users\4400117676\Source\Repos\TicTacToeRepo\TicTacToe\TicTacToe\bin\Debug\net6.0\Game.pdb
+C:\Users\4400117676\Source\Repos\TicTacToeRepo\TicTacToe\TicTacToe\obj\Debug\net6.0\Game.dll
+C:\Users\4400117676\Source\Repos\TicTacToeRepo\TicTacToe\TicTacToe\obj\Debug\net6.0\refint\Game.dll
+C:\Users\4400117676\Source\Repos\TicTacToeRepo\TicTacToe\TicTacToe\obj\Debug\net6.0\Game.pdb
+C:\Users\4400117676\Source\Repos\TicTacToeRepo\TicTacToe\TicTacToe\obj\Debug\net6.0\Game.genruntimeconfig.cache
+C:\Users\4400117676\Source\Repos\TicTacToeRepo\TicTacToe\TicTacToe\obj\Debug\net6.0\ref\Game.dll

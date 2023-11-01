@@ -40,13 +40,20 @@ public class TicTacToe
         while (IsRemainingSpot() && !winCondition)
         {
             Console.Write($"Player {player}, which position do you choose? ");
-            // check input here
-            // It must be between 1 and 9
-            // it must be an empty space
             string input = Console.ReadLine();
             int position = Convert.ToInt32(input);
+
+            // check input here
+            // It must be between 1 and 9
+            if (position < 1 || position > 9 )
+            {
+                Console.WriteLine("Please input a number from 1 to 9");
+                continue;
+            }
+
+            // check input here
+            // it must be an empty space
             bool isAvailable = CheckBoardForEmptySpotAtPosition(position);
-            
             if (isAvailable)
             {
                 AssignPositionAPlayer(position, player);
@@ -55,6 +62,7 @@ public class TicTacToe
             {
                 //Error message and require a new position
                 Console.WriteLine("Fool, this spot is taken");
+                continue;
             }
             BlankSpaces(7);
             PrintBoardGame();
@@ -77,82 +85,28 @@ public class TicTacToe
 
     public bool CheckBoardForEmptySpotAtPosition(int position)
     {
-        if(position == 1 && gameboard[0, 0] == 0) 
+        int shiftedPosition = position - 1;
+
+        for (int i = 0; i < 9; i ++)
         {
-            return true;
-        }
-        if (position == 2 && gameboard[0, 1] == 0)
-        {
-            return true;
-        }
-        if (position == 3 && gameboard[0, 2] == 0)
-        {
-            return true;
-        }
-        if (position == 4 && gameboard[1, 0] == 0)
-        {
-            return true;
-        }
-        if (position == 5 && gameboard[1, 1] == 0)
-        {
-            return true;
-        }
-        if (position == 6 && gameboard[1, 2] == 0)
-        {
-            return true;
-        }
-        if (position == 7 && gameboard[2, 0] == 0)
-        {
-            return true;
-        }
-        if (position == 8 && gameboard[2, 1] == 0)
-        {
-            return true;
-        }
-        if (position == 9 && gameboard[2, 2] == 0)
-        {
-            return true;
+            if (shiftedPosition == i && gameboard[shiftedPosition/3, shiftedPosition%3] == 0)
+            {
+                return true;
+            }
         }
         return false;
     }
 
     public void AssignPositionAPlayer(int position, int player)
     {
-        if (position == 1)
+        int shiftedPosition = position - 1;
+
+        for (int i = 0; i < 9; i++)
         {
-            gameboard[0, 0] = player;
-        }
-        if (position == 2)
-        {
-            gameboard[0, 1] = player;
-        }
-        if (position == 3)
-        {
-            gameboard[0, 2] = player;
-        }
-        if (position == 4)
-        {
-            gameboard[1, 0] = player;
-        }
-        if (position == 5)
-        { 
-            gameboard[1, 1] = player;
-        }
-        if (position == 6)
-        {
-            gameboard[1, 2] = player;
-        }
-        if (position == 7)
-        {
-            gameboard[2, 0] = player;
-        }
-        if (position == 8)
-        {
-            gameboard[2, 1] = player;
-        }
-        if (position == 9)
-        {
-            gameboard[2, 2] = player;
+            if (shiftedPosition == i)
+            {
+                gameboard[shiftedPosition / 3, shiftedPosition % 3] = player;
+            }
         }
     }
 
@@ -216,5 +170,7 @@ public class TicTacToe
     {
         Console.WriteLine($"Congratulations Player {player}! You have bested " +
             $"the enemy. Nicely Job!");
+        Console.WriteLine("*Winning Animation*");
+        Console.WriteLine("*Winning Fanfare do-do-do-do-doooooo*")
     }
 }

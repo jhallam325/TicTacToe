@@ -1,5 +1,4 @@
-﻿
-namespace Game
+﻿namespace Game
 {
     public class Class1
     {
