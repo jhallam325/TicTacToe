@@ -171,6 +171,6 @@ public class TicTacToe
         Console.WriteLine($"Congratulations Player {player}! You have bested " +
             $"the enemy. Nicely Job!");
         Console.WriteLine("*Winning Animation*");
-        Console.WriteLine("*Winning Fanfare do-do-do-do-doooooo*")
+        Console.WriteLine("*Winning Fanfare do-do-do-do-doooooo*");
     }
 }
